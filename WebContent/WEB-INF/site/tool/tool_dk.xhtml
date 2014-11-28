@@ -1,0 +1,51 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:tag="http://java.sun.com/jsf/composite/facetag">
+	
+	<ui:composition template="../tempalet/templaet_business.xhtml">
+		<ui:define name="page_title">理财收益计算器</ui:define>
+		<ui:param name="menu_nav_key" value="calcultor"/>
+		<ui:define name="template_content">
+			<div style="margin:0 auto; margin-left:400px; width:80%;">
+				 <p style="margin-left:150px;font-size:20px;">贷款计算器</p>
+						<ul id="calculatorform">
+							<li><label>贷款类型</label> 
+							 <select class="ipts">
+							  <option value ="qxz">请选择</option>
+							  <option value ="cd">车贷</option>
+							  <option value ="fd">房贷</option>
+							  <option value="xyd">信用贷</option>
+							</select>
+							 
+							<k>&#160;&#160;</k>
+							<i id="tip" style="color:red;"></i>
+							</li>
+							<li><label>贷款金额</label><input id="principal"      class="ipt" onkeyup="value=value.replace(/[^\d]/g,'')"  /><k>元</k><i id="dkjetip" style="color:red;"></i></li>
+							<li><label>贷款期限</label><input  id="duration"  class="ipt" onkeyup="value=value.replace(/[^\d]/g,'')"  /><k>月</k><i id="dkqxtip" style="color:red;"></i></li>
+							<li><label>年利率</label><input  id="interest"    class="ipt" onkeyup="value=value.replace(/[^\d.]/g,'')" /><k>%</k><i id="dknlltip" style="color:red;"></i></li>
+							<li><label>还款方式</label>
+							 
+							<select id="plan">
+							  <option value="interestFirst">按日计息，先息后本</option>
+							  <option value="oneTime">按日计息，到期还本息</option>
+							  <option value="evenMonthly">按月等额本息原款</option>
+							  <option value="monthly">按月付息，到期还本</option>
+							  <option value="evenPrin">等额本金</option>
+							</select>	
+							<k>&#160;&#160;</k>
+							<i id="dkhkfstip" style="color:red;"></i>
+							</li>
+							<li style="margin-left: 70px;">  <input type="button" style="background-image:url(../images/htcf_sum.jpg);width:136px; height:40px; border:0px;" id="table_button"  /></li>
+							<li></li>
+				   	</ul>
+				   	<div id="comment" ></div>
+				    <table style="display:none" id="table1" border="1px" cellspacing="0px"  width="450px" />
+			</div>
+			<script src="js/calculator.js" />
+		</ui:define>
+	</ui:composition>
+</html>

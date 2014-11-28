@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<project name="caffp2p.demo.func" default="" basedir="../..">
+	<!-- 以下4个值为bat传入-->
+	<property name="localprojectName" value="asdfasdf" />
+	<property name="serverprojectName" value="asdfasdf" />
+	<property name="ziptargetdir" value="d://asdfasdf" />
+
+	<property name="caff.lib" value="./caff.lib/" />
+	<property name="caff-core-lib" value="${caff.lib}/cafflibs" />
+	<property name="ant-contrib-lib" value="${caff.lib}/externallibs" />
+	
+	<property name="dist-class" value="./${localprojectName}/WebContent/WEB-INF/classes" />
+	<property name="src-java" value="./${localprojectName}/src" />
+	
+	<taskdef resource="org/aspectj/tools/ant/taskdefs/aspectjTaskdefs.properties">
+        <classpath>
+            <pathelement location="${caff.lib}/externallibs/aspectjtools.jar"/>
+        </classpath>
+    </taskdef>
+	
+	<path id="ant-classpath">
+		<fileset dir="${ant-contrib-lib}">
+			<include name="*.jar"/>
+		</fileset>
+	</path>
+	<path id="core-classpath">
+			<fileset dir="${caff-core-lib}">
+				<include name="*.jar"/>
+			</fileset>
+	</path>
+	
+	<target name="compile" description="Compile all source code">
+		<delete dir="${dist-class}"/>
+		<mkdir dir="${dist-class}"/>
+		<copy todir="${dist-class}">
+			<fileset dir="${src-java}">
+				<exclude name="**/*.java"/>
+			</fileset>
+		</copy>
+		<javac destdir="${dist-class}" debug="true" includeantruntime="yes"
+			deprecation="false" optimize="false" failonerror="true" encoding="UTF-8">
+			<src path="${src-java}"/>
+			<classpath refid="ant-classpath"/>
+			<classpath refid="core-classpath"/>
+		</javac>
+	</target>
+	
+	
+	<target name="iajccompile" description="Compile all source code">
+		<delete dir="${dist-class}"/>
+		<mkdir dir="${dist-class}"/>
+		<copy todir="${dist-class}">
+			<fileset dir="${src-java}">
+				<exclude name="**/*.java"/>
+			</fileset>
+		</copy>
+		<iajc destdir="${dist-class}" source="1.6" encoding="UTF-8">
+				<injars>
+					<fileset dir="${caff-core-lib}" id="id">
+						<include name="**/*.jar"/>
+					</fileset>
+				</injars>
+                <sourceroots>
+                    <pathelement location="${src-java}"/>
+                </sourceroots>
+				<classpath>
+					<path refid="ant-classpath"/>
+					<pathelement location="${caff.lib}/externallibs/aspectjtools.jar"/>
+					<pathelement location="${caff.lib}/externallibs/aspectjrt.jar"/>
+				</classpath>
+				
+        </iajc>
+	</target>
+	
+	
+	<target name="getzip" depends="iajccompile">
+		<delete dir="${ziptargetdir}"/>
+		<mkdir dir="${ziptargetdir}"/>
+        <zip destfile="${ziptargetdir}/${serverprojectName}.zip">
+            <fileset dir="./${localprojectName}/WebContent">
+                <exclude name="**/.svn/" />
+            </fileset>
+        </zip>
+	</target>
+	
+	<target name="test" description="Testing!">
+		<echo>test</echo>
+		
+	</target>		
+
+</project>

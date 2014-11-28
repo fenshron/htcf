@@ -1,0 +1,65 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:tag="http://java.sun.com/jsf/composite/facetag">
+	
+	<ui:composition template="./template_footer.xhtml">
+		<ui:define name="body_content">
+			<div id="ie6Alert" class="page_block hide">
+				<div class="">
+				  <div id="kie-bar" class="kie-bar">
+				      您使用的浏览器版本过低，建议立即升级到
+				      <a href="http://ie.alipay.com/download" seed="kie-setup-IE8" target="_blank" ><i class="kie-bar-icon-ie"></i>Internet Explorer 8</a>
+				      或
+				      <a href="https://securitycenter.alipay.com/sc/partner/browser.htm" seed="kie-setup-IE8" target="_blank" ><i class="kie-bar-icon-chrome"></i>Google Chrome</a>
+				  </div>
+				</div>
+			</div>
+			<style>
+			      .kie-bar {
+			          height: 24px;
+			          line-height: 1.8;
+			          font-weight:normal;
+			          text-align: center;
+			          border-bottom:1px solid #fce4b5;
+			          background-color:#FFFF9B;
+			          color:#e27839;
+			          position: relative;
+			          font-size: 14px;
+			          text-shadow: 0px 0px 1px #efefef;
+			          padding: 5px 0;
+			      }
+			      .kie-bar a {
+			          color:#08c;
+			          text-decoration: none;
+			      }
+			</style>
+			<script>
+				if(isIE6()){
+					$("#ie6Alert").show();
+				}
+			</script> 
+			<div style="width:100%;" >
+			    <div class="header_top" style="width:100%;height:30px;background-image: url('../images/yscf/index_common01.jpg');background-repeat: repeat-x;" >
+					<div class="header_top d_w o_center " style="height:30px;/*border-left: 1px solid #393939;*/" >
+						
+						<div class="fr dycfheader d_n" style="height:30px;line-height:30px;" >
+							<iframe src="/home_top_login_state.htm" style="width:998px;height:30px;color:#C4C4C4;" frameborder="0" scrolling="no"></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+			
+			<div>
+			
+				<ui:insert name="main_content">
+					main content
+				</ui:insert> 
+			</div>
+		</ui:define>
+	</ui:composition>
+	
+</html>

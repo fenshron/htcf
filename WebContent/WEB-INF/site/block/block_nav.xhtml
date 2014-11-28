@@ -1,0 +1,144 @@
+<ui:composition
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+	
+	<c:if test="#{hasDownloadExcel}">
+	   <div class="clearfix" style="width:100%;">
+	       <div id="#{navId}" class="f_yahei f_14 fl"/>
+	       <div class="fr" style="margin:-4px 2px 0px 0px;">
+	           <a href="###" class="funcico download_excel block" 
+	               title="导出电子表格" 
+	               onclick="return showDownloadForm();"></a>
+	       </div>
+	    </div>
+	    <div id="dowanLoadExcelDiv" class="hide">
+	       <div style="margin:20px;">
+	           <div class="f_24">导出电子表格</div>
+	           <div class="clearfix mt_20" style="width:300px;">
+                    <div class="fl w70 mt_6">起始页码：</div> 
+                    <div class="fl">
+                         <input id="downBeginIndex" type="text" class="input inputNormal"  style="font-size:14px;width:100px;"
+                            value="#{page.index}"/>
+                    </div>
+                    <div class="fl msg">
+                           <span class="msg_pic"></span>
+                           <span class="msg_content" title=""></span>
+                    </div>
+                </div>
+                <div class="clearfix" style="width:300px;">
+                    <div class="fl w70 mt_6">结束页码：</div> 
+                    <div class="fl">
+                         <input id="downEndIndex" type="text" class="input inputNormal"  style="font-size:14px;width:100px;"
+                            value="#{page.index}"/>
+                    </div>
+                    <div class="fl msg">
+                           <span class="msg_pic"></span>
+                           <span class="msg_content" title=""></span>
+                    </div>
+                </div>
+                <div class="clearfix" style="width:300px;">
+                     <div class="fl w70 h30"></div>
+                     <div class="fl">
+                         <a href="###" 
+                                id="outputExcelTrigger"
+                                class="bt btNormal"
+                                onclick="return confirmOutput();">导出</a>
+                     </div>
+                     <div id="btDoingActionDiv" class="fl hide clearfix">
+				       <div class="fl">请稍候，如果已下载成功，请关闭本窗口。</div> 
+				    </div>
+                 </div>
+	       </div>
+	    </div>
+	    <script>
+             function showDownloadForm() {
+                 $("#outputExcelTrigger").parent().show();
+                 $("#btDoingActionDiv").hide();
+                 $.layer({
+                      type : 1,
+                      title : false,
+                      area : ['350px', '250px'],
+                      page : {dom : '#dowanLoadExcelDiv'}
+                  });
+                  return false;
+             };
+             
+             var pageCount = #{page.pageCount};
+             function downBeginIndex() {
+                 var val = $('#downBeginIndex').val();
+                 if(is_null(val) || !is_numeric(val)) {
+                	 f_ck_error($('#downBeginIndex'), "必须是数值");
+                     return CK_FALSE;
+                 }
+                 if(parseInt(val) &lt;= 0 || parseInt(val) &gt; pageCount){
+                     f_ck_error($('#downBeginIndex'), "1 - " + pageCount);
+                     return CK_FALSE;
+                 } 
+                 return CK_TRUE;
+             };
+             function downEndIndex() {
+                 if(downBeginIndex() != CK_TRUE) {
+                	 return CK_NONE;
+                 }
+                 
+                 var val = $('#downEndIndex').val();
+                 if(is_null(val) || !is_numeric(val)) {
+                     f_ck_error($('#downEndIndex'), "必须是数值");
+                     return CK_FALSE;
+                 }
+                 if(parseInt(val) &lt;= 0 || parseInt(val) &gt; pageCount){
+                     f_ck_error($('#downEndIndex'), "1 - " + pageCount);
+                     return CK_FALSE;
+                 } 
+
+                 var beginIndexVal = $('#downBeginIndex').val();
+                 if(parseInt(beginIndexVal) &gt; parseInt(val)){
+                     f_ck_error($('#downEndIndex'), "起始&gt;结束");
+                     return CK_FALSE;
+                 } 
+
+                 var max = 5000;
+                 if(!is_null("#{maxPage4Excel}")) {
+                	 max = parseInt("#{maxPage4Excel}");
+                 }
+                 if(parseInt(val) - parseInt(beginIndexVal) &gt; max){
+                     f_ck_error($('#downEndIndex'), "单次&lt;=" + max + "页");
+                     return CK_FALSE;
+                 } 
+                 
+                 return CK_TRUE;
+             };
+
+             function confirmOutput() {
+            	 f_ck_info($('#downBeginIndex'), "");
+            	 f_ck_info($('#downEndIndex'), "");
+                 if(downBeginIndex() == CK_TRUE 
+                         &amp;&amp; downEndIndex() == CK_TRUE
+                         &amp;&amp; confirmAction2("确定导出吗?")) {
+                     var urlBase = "#{downExcelUrl}";//有特殊处理时，需要传递参数downExcelUrl
+                     if(is_null(urlBase)) {
+                    	 urlBase = "#{url}";
+                     }
+                	 var begin = parseInt($('#downBeginIndex').val());
+                	 var end = parseInt($('#downEndIndex').val());
+                     var outputURL = "/caff_excel.do?url=#{url}&amp;begin=" + begin + "&amp;end=" + end;
+                     outputURL = makeFilterUrl(outputURL);
+                     $("#outputExcelTrigger").attr("href", outputURL);
+                     return true; 
+                 }
+                 return false; 
+             };
+         </script>
+	</c:if>
+	<c:if test="#{!hasDownloadExcel}">
+	   <div id="#{navId}" class="f_yahei f_14"/>
+	</c:if>
+	
+	<script>		
+         makePagingNavigationDynamic('#{url}', $("##{navId}"),#{page.index},#{page.pageCount},#{page.totalCount});
+    </script>
+	
+</ui:composition>

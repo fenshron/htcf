@@ -1,0 +1,176 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:tag="http://java.sun.com/jsf/composite/facetag">
+
+<ui:composition template="../tempalet/templaet_business.xhtml">
+    <ui:param name="menu_nav_key" value="adviser"/>
+    <ui:define name="page_title">理财顾问</ui:define>
+	<ui:define name="template_content">
+		<div class="pro_div_1" style="margin: -20px auto 0 auto;">
+		   <div>您现在的位置: <a href="index.htm">首页</a> -- <a href="/htcf/mean.htm"></a>理财顾问</div>
+			<div>
+			
+				<div class="adv_div_item" style="margin-top: 30px;">
+					<div class="adv_div">
+						<img src="images/guwen_1.jpg" />
+					</div>
+					<div class="pro_div_4">
+					   <div class="pro_p_2" style="margin-top: 15px;">
+					     <span class="adv_div_name">王健</span>
+					     <img src="images/guwen_06.jpg" style="margin-left: 55px;float: left;margin-top: 5px;" />
+					     <span style="float: left;margin-left: 10px;">13714682486</span>
+					     
+					     <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=490520579&amp;site=qq&amp;menu=yes" target="_blank" style="height: 30px;line-height: 30px;">
+						   <img src="http://wpa.qq.com/pa?p=2:490520579:45" title="王健经理" alt="王健经理" class="adv_div_tel"/><span style="margin-left: 15px;">490520579</span>
+						 </a>
+					   </div>
+					     
+						<p class="pro_p_2">投资不仅仅是一种行为，更是一门艺术，懂投资、会投资的人是幸福的，是会享受的！</p>
+					</div>
+				</div>
+				
+				
+				<div class="adv_div_item">
+					<div class="adv_div">
+						<img src="images/guwen_2.jpg" />
+					</div>
+					<div class="pro_div_4">
+					   <div class="pro_p_2" style="margin-top: 15px;">
+					     <span class="adv_div_name">王咏婷</span>
+					     <img src="images/guwen_06.jpg" class="adv_div_tel"/>
+					     <span style="float: left;margin-left: 10px;">18320842105</span>
+					     <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=270727887&amp;site=qq&amp;menu=yes" target="_blank" style="height: 30px;line-height: 30px;">
+						   <img src="http://wpa.qq.com/pa?p=2:270727887:45" title="客服王咏婷" alt="客服王咏婷" class="adv_div_tel"/><span style="margin-left: 15px;">270727887</span>
+						  </a>
+					   </div>
+					     
+						<p class="pro_p_2">收入像一条河流，财富是您的水库，我们的任务就是帮您管理好水库，开源节流，保证您的水库安全无阻，财源广进！</p>
+					</div>
+				</div>
+				
+				<div class="adv_div_item">
+					<div class="adv_div">
+						<img src="images/guwen_3.jpg" />
+					</div>
+					<div class="pro_div_4">
+					   <div class="pro_p_2" style="margin-top: 15px;">
+					     <span class="adv_div_name">张健</span>
+					     <img src="images/guwen_06.jpg" class="adv_div_tel"/>
+					     <span style="float: left;margin-left: 10px;">18995981658 </span>
+					     <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=364447662&amp;site=qq&amp;menu=yes" target="_blank" style="height: 30px;line-height: 30px;">
+						   <img src="http://wpa.qq.com/pa?p=2:364447662:45"  title="客服张健" alt="客服张健" class="adv_div_tel" /><span style="margin-left: 15px;">364447662</span>
+						  </a>
+					   </div>
+					     
+						<p class="pro_p_2">每一个以亿为单位的数字的背后，除了艰辛的创业史外，还有自成体系的理财方式。 其实世界上没有传奇，只有不为传奇而努力；其实赚一亿并不难，难的是让理财方式适合自己。</p>
+					</div>
+				</div>
+				
+				<div class="adv_div_item">
+					<div class="adv_div">
+						<img src="images/guwen_4.jpg" />
+					</div>
+					<div class="pro_div_4">
+					   <div class="pro_p_2" style="margin-top: 15px;">
+					     <span class="adv_div_name">林妙婷</span>
+					     <img src="images/guwen_06.jpg" class="adv_div_tel"/>
+					     <span style="float: left;margin-left: 10px;">13670274584</span>
+					      <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=153447525&amp;site=qq&amp;menu=yes" target="_blank" style="height: 30px;line-height: 30px;">
+						   <img src="http://wpa.qq.com/pa?p=2:153447525:45" title="客服林妙婷" alt="客服林妙婷" class="adv_div_tel" /><span style="margin-left: 15px;">153447525</span>
+						  </a>
+					   </div>
+						<p class="pro_p_2">投资实现梦想，理财改变人生。<br/>
+						诚信为本、服务至上、精于专业、卓越理财！汇丰财富，与您共创美好未来。</p>
+					</div>
+				</div>
+				
+				
+				<div class="adv_div_item">
+					<div class="adv_div">
+						<img src="images/guwen_5.jpg" />
+					</div>
+					<div class="pro_div_4">
+					   <div class="pro_p_2" style="margin-top: 15px;">
+					     <span class="adv_div_name">吴新亮</span>
+					     <img src="images/guwen_06.jpg" class="adv_div_tel"/>
+					     <span style="float: left;margin-left: 10px;">15816895200</span>
+					     <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=343421459&amp;site=qq&amp;menu=yes" target="_blank" style="height: 30px;line-height: 30px;">
+						   <img src="http://wpa.qq.com/pa?p=2:343421459:45" title="客服吴新亮" alt="客服吴新亮" class="adv_div_tel"/><span style="margin-left: 15px;">343421459</span>
+						  </a>
+					   </div>
+					     
+						<p class="pro_p_2">通过科学的理财知识，让我们少一点辛苦，多一点幸福，汇通财富，财富共赢！</p>
+					</div>
+				</div>
+				
+				<div class="adv_div_item">
+					<div class="adv_div">
+						<img src="images/guwen_6.jpg" />
+					</div>
+					<div class="pro_div_4">
+					   <div class="pro_p_2" style="margin-top: 15px;">
+					     <span class="adv_div_name">曹伟星</span>
+					     <img src="images/guwen_06.jpg" class="adv_div_tel"/>
+					     <span style="float: left;margin-left: 10px;">13640256652</span>
+					     <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=354475366&amp;site=qq&amp;menu=yes" target="_blank" style="height: 30px;line-height: 30px;">
+						   <img src="http://wpa.qq.com/pa?p=2:354475366:45" title="客服曹伟星" alt="客服曹伟星" class="adv_div_tel" /><span style="margin-left: 15px;">354475366</span>
+						  </a>
+					   </div>
+					     
+						<p class="pro_p_2">安全理财做的好，美好生活无烦恼。用心去做，真诚服务。汇通丰财富，有您更精彩！</p>
+					</div>
+				</div>
+				
+				
+				<div class="adv_div_item">
+					<div class="adv_div">
+						<img src="images/guwen_7.jpg" />
+					</div>
+					<div class="pro_div_4">
+					   <div class="pro_p_2" style="margin-top: 15px;">
+					     <span class="adv_div_name">吴嘉辉</span>
+					     <img src="images/guwen_06.jpg" class="adv_div_tel"/>
+					     <span style="float: left;margin-left: 10px;">13531610106</span>
+					     <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=411711899&amp;site=qq&amp;menu=yes" target="_blank" style="height: 30px;line-height: 30px;">
+						   <img src="http://wpa.qq.com/pa?p=2:411711899:45" title="客服吴嘉辉" alt="客服吴嘉辉" class="adv_div_tel"/><span style="margin-left: 15px;">411711899</span>
+						 </a>
+					     
+					   </div>
+					     
+						<p class="pro_p_2">每一个以亿为单位的数字的背后，除了艰辛的创业史外，还有自成体系的理财方式。 其实世界上没有传奇，只有不为传奇而努力；其实赚一亿并不难，难的是让理财方式适合自己。</p>
+					</div>
+				</div>
+				
+			
+				<div class="adv_div_item">
+					<div class="adv_div">
+						<img src="images/guwen_8.jpg" />
+					</div>
+					<div class="pro_div_4">
+					   <div class="pro_p_2" style="margin-top: 15px;">
+					     <span class="adv_div_name">周海珍</span>
+					     <img src="images/guwen_06.jpg" class="adv_div_tel"/>
+					     <span style="float: left;margin-left: 10px;">13824328876</span>
+					      <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=704327539&amp;site=qq&amp;menu=yes" target="_blank" style="height: 30px;line-height: 30px;">
+						   <img src="http://wpa.qq.com/pa?p=2:704327539:45" title="客服周海珍" alt="客服周海珍" class="adv_div_tel"/><span style="margin-left: 15px;">704327539</span>
+						  </a>
+					   </div>
+					     
+						<p class="pro_p_2">安全理财做的好，美好生活无烦恼。用心去做，真诚服务。汇通丰财富，有您更精彩！</p>
+					</div>
+				</div>
+				
+		   </div>
+		</div>
+	</ui:define>
+</ui:composition>
+</html>
+
+
+
+
+
+

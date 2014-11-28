@@ -1,0 +1,81 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:tag="http://java.sun.com/jsf/composite/facetag"
+	xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
+
+<ui:composition template="../tempalet/templaet_business.xhtml">
+    <ui:param name="menu_nav_key" value="adviser"/>
+    <ui:define name="page_title">财富预约</ui:define>
+	<ui:define name="template_content">
+	<script>
+	$(document).ready(function(){
+		$("#adviserform tr td:eq(2)").css("width","100px");
+		$("#advisersubmit").hover(function(){
+			$(this).css("background-color","#FFD42A");
+		},function(){
+			$(this).css("background-color","#F7622C")
+		}); 
+		
+	});
+	function swith_vcode_img(){
+	    var $img_vcode = $(".img_vcode");
+	    $img_vcode.attr("src", '/vcode_image.do?'+Math.random());
+	    return false;
+	};
+	</script>
+		<div class="pro_div_1" style="margin: -20px auto 0 auto;">
+		   <div>您现在的位置: <a href="index.htm">首页</a> -- <a href="/htcf/mean.htm"></a>财富预约</div>
+				<div style="margin-left: 100px; ">
+					<h:form prependId="false">
+						 <p class="tip">请留下你的联系方式和透支需求，我们的专业理财顾问会在一个工作日内与您联系。</p>
+						 <h:inputHidden value="#{bean['htcfSendEmailBean'].params.vcodeImage}" />
+							 <table id="adviserform">
+							 	<tr><td>姓名</td><td><h:inputText value="#{bean['htcfSendEmailBean'].caffsendemail.caffSendEmailUsername}"  /></td><td> </td><td>所在城市</td><td><h:inputText value="#{bean['htcfSendEmailBean'].caffsendemail.caffSendEmailCity}" /></td></tr>
+							 	<tr><td></td><td>&#160;</td><td>&#160;&#160;</td><td> </td><td> </td></tr>
+							 	<tr><td>工作单位</td><td><h:inputText value="#{bean['htcfSendEmailBean'].caffsendemail.caffSendEmailWorkAdress}" /></td><td> </td><td>职务</td><td><h:inputText value="#{bean['htcfSendEmailBean'].caffsendemail.caffSendEmailJob}" /></td></tr>
+							 	<tr><td></td><td>&#160; </td><td>&#160;&#160;</td><td> </td><td> </td></tr>
+							 	<tr><td>电子邮箱</td><td>
+							 	<h:inputText id="email" value="#{bean['htcfSendEmailBean'].caffsendemail.caffSendEmailEmail}">
+							 	<f:validator validatorId="EmailValidator" />
+								<f:ajax event="keyup" render="email_err"/>
+							 	</h:inputText></td><td></td>
+							 	<td>联系电话</td><td>
+							 	<h:inputText id="phone" value="#{bean['htcfSendEmailBean'].caffsendemail.caffSendEmailPhone}">
+							 	<f:validator validatorId="PhoneValidator" />
+								<f:ajax event="keyup" render="phone_err"/>
+							 	</h:inputText>
+							 	</td></tr>
+							 	<tr><td colspan="2" style="font-size: 10px;"> <h:message for="email" id="email_err" style="color:red"/>&#160; </td><td colspan="2" style="font-size: 10px;"> <h:message for="phone" id="phone_err" style="color:red"/> &#160; </td></tr>
+							 	<tr>
+							 	<td>预投入金额(万元)</td><td>
+							 	<h:inputText id="money" value="#{bean['htcfSendEmailBean'].caffsendemail.caffSendEmailMoney}">
+							 	<f:validator validatorId="MoneyValidator" />
+								<f:ajax event="keyup" render="money_err"/>
+							 	</h:inputText>
+							 	</td><td></td><td>了解汇通渠道</td><td><h:inputText value="#{bean['htcfSendEmailBean'].caffsendemail.caffSendEmailInformation}" /></td></tr>
+								 <tr><td colspan="2" style="font-size: 10px;"><h:message for="money" id="money_err" style="color:red"/>&#160; </td><td colspan="2">&#160;&#160;</td><td> </td></tr>
+								 <tr><td>验证码</td><td>
+								 <h:inputText   value="#{bean['htcfSendEmailBean'].params.vcodeImage}"/>
+								 </td><td><img class="img_vcode" src="/vcode_image.do"/> </td><td><a href="###" class="link_switch_vcode" onclick="return swith_vcode_img();">换一个验证码</a>
+								  </td><td></td></tr>
+							 </table>
+							 <div class="c"/>
+							 
+							 <div style="margin-left: 300px; margin-top:50px;"><h:commandButton id="advisersubmit" value="提交" onclick="return confirm('ok')"  action="#{bean['htcfSendEmailBean'].send}" /></div>
+							 
+					</h:form>
+					<h:outputText style="font-size:16px;color:green;" value="#{bean['htcfSendEmailBean'].restult}"/>
+				</div>
+		</div>
+	</ui:define>
+</ui:composition>
+</html>
+
+
+
+
+
+

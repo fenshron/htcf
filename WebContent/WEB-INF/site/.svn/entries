@@ -1,0 +1,97 @@
+8
+
+dir
+1842
+svn://192.168.1.85/caffcoo/websites/htcf/WebContent/WEB-INF/site
+svn://192.168.1.85
+
+
+
+2014-10-23T01:40:24.815172Z
+616
+liuguisheng
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+508a5a1d-6841-4487-97e7-e5b4710e1542
+
+userlist_biding.xhtml
+file
+
+
+
+
+2014-11-17T07:36:43.762433Z
+ddde01ddb56dc8e67e7f8cd3a2d0591f
+2014-10-16T03:57:33.564607Z
+111
+liuguisheng
+
+idea
+dir
+
+index.xhtml
+file
+
+
+
+
+2014-11-17T07:36:43.762433Z
+cdc414c5cd7ab65c8f8db213ca1132ff
+2014-10-23T01:40:24.815172Z
+616
+liuguisheng
+
+products
+dir
+
+userlist.xhtml
+file
+
+
+
+
+2014-11-17T07:36:43.762433Z
+79a7538dedeb0c2cdce8ae0fbecc1200
+2014-10-16T03:57:33.564607Z
+111
+liuguisheng
+
+enroll.xhtml
+file
+
+
+
+
+2014-11-17T07:36:43.762433Z
+5b2221427847138e463ca82a41542590
+2014-10-16T03:57:33.564607Z
+111
+liuguisheng
+
+index
+dir
+
+about
+dir
+
+contact
+dir
+
+tempalet
+dir
+
+adviser
+dir
+

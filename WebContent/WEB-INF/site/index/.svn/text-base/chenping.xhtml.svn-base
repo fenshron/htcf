@@ -1,0 +1,30 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:tag="http://java.sun.com/jsf/composite/facetag">
+	
+	<ui:composition template="../tempalet/templaet_business.xhtml">
+		<ui:param name="menu_nav_key" value="index"/>
+		<ui:define name="page_title">汇通财富首页</ui:define>
+		<ui:define name="template_content">
+			<div class="con_div_1">
+			   <div class="contop">
+			     <h2 style="text-align:center;" >格局决定布局</h2><br/>
+			   </div>
+			   <p>世界第一的催眠大师马修史伟说过：你的格局一旦被放大后，再也回不到你原来的大小。当格局越来越大的时候，我们装进去的东西就越来越多，放大你的格局，格局放的越大，你的人生就越不可思议。因此，在列目标之前，还有一个重要的工作要做，那就是放大你的格局。</p>
+			   <p>汇通易贷经过三年时间的实践积累，已先后在中山、东莞设立了分支机构，为企业今后的发展打下了坚实的基础。汇通易贷已经进入了高速发展的阶段，今天汇通易贷取得的成绩也是我们汇通易贷管理层英明决策及公司全体同仁共同努力的结果。</p>
+			   <p>人类已经进入互联网时代，互联网正在全面融入人们社会生活的方方面面，同时也在悄然改变着人们的思维观念。而汇通易贷正值发展之时。公司正积极招贤纳士吸引更专业的人才加入，而公司也为我们员工的发展提供了更多的学习机会及晋升的平台。汇通易贷一贯重视企业文化建设和风险体制的管理，根据业务拓展的需求，设计系统化的风险控制模型，从规范业务管理和业务创新组合入手，建立风险控制体系。</p>
+			    <h3 style="text-align:right;margin-right:20px;">陈萍 </h3>
+			</div>
+		</ui:define>
+	</ui:composition>
+</html>
+
+
+
+
+
+

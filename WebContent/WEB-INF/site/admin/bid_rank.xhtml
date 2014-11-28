@@ -1,0 +1,40 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:c="http://java.sun.com/jsp/jstl/core"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:tag="http://java.sun.com/jsf/composite/facetag">
+    
+    <ui:composition template="../template/template_common.xhtml">
+        <ui:param name="page_title" value="投标排名"/>
+        <ui:param name="url" value="/admin/bid_rank.htm"/>
+        <ui:define name="main_content">
+            <div class="page_block">
+                <div class="page_block_content">
+                   
+                     <div style="border: 1px solid red;">
+                         <table id="cxls_table" cellspacing="0" cellpadding="0" border="0" class="w980 f_14">
+                              <tr>
+                                  <td class="tb_hd t_c tb_td1" style="width:15%;">次序</td>
+                                  <td class="tb_hd t_c" style="width:25%;">用户名</td>
+                                  <td class="tb_hd t_c" style="width:30%;">姓名</td>
+                                  <td class="tb_hd t_c" style="width:30%;">待收总金额</td>
+                              </tr>
+                               <c:forEach var="item" items="#{bean['demoSystemBean'].bidDue.items}" varStatus="status">
+                                 <tr class="tb_tr_#{status.even}">
+                                     <td class="tb_td tb_td1 t_c cxls_number">#{(bean['caffP2pBidListBean'].bidsRank.index-1)*(bean['caffP2pBidListBean'].bidsRank.countInPage) + status.index +1}</td>
+                                     <td class="tb_td t_c">#{item.entityWrapper.user.name}</td>
+                                     <td class="tb_td t_c">#{item.entityWrapper.user.entityWrapper.realName}</td>
+                                     <td class="tb_td t_c cxls_money">#{item.entityWrapper.repaidAmountD}</td>
+                                 </tr> 
+                             </c:forEach>  
+                           
+                          </table> 
+                        
+                     </div>
+                </div>
+            </div>
+        </ui:define>
+    </ui:composition>
+    
+</html>

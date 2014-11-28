@@ -1,0 +1,59 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:tag="http://java.sun.com/jsf/composite/facetag">
+
+<ui:composition template="../tempalet/templaet_business.xhtml">
+    <ui:param name="menu_nav_key" value="about"/>
+    <ui:define name="page_title">关于汇通</ui:define>
+	<ui:define name="template_content">
+		<script type="text/javascript">
+			function about_intro(n){ 
+					$("#introduce_title ul li").addClass("idea_bg_1").removeClass("about_font_1").removeClass("pro_bg_1");
+					$("#introduce_title ul li").eq(n).removeClass("idea_bg_1").addClass("pro_bg_1").addClass("about_font_1");
+					$("#introduce_content>div").addClass("about_div_1");
+					$("#introduce_content>div").eq(n).removeClass("about_div_1");
+				}
+		</script>
+		<div class="pro_div_1 idea_div_2">您现在的位置：<a href="/index.htm">首页</a> -- 关于汇通</div>
+		<div class="pro_div_1">
+		    
+			<div id="introduce_title">
+				<ul>
+					<li class="about_li_1 about_font_1 pro_bg_1 about_li_2" onclick="about_intro(0);"><font size="5"><b>深圳市汇通财富管理</b></font></li>
+					<li class="about_li_1 idea_bg_1" onclick="about_intro(1);"><font size="5"><b>汇通集团介绍、子公司介绍</b></font></li>
+					<li class="about_li_1 idea_bg_1" onclick="about_intro(2);"><font size="5"><b>合作机构</b></font></li>
+					<li style="clear: both;"></li>
+				</ul>
+			</div>
+			<div id="introduce_content">
+				<div>
+					<p class="idea_p_1">深圳市汇通财富管理有限公司是中国财富管理行业的知名企业，为大众富裕人群和高净值人群提供全方位的理财规划与财富管理顾问服务，专注将国内外最优秀的股权类理财模式通过科学的资产配置带给千千万万的理财者。</p>
+					<p class="idea_p_1">深圳市汇通财富管理有限公司是汇通集团全资子公司。深圳市汇通财富管理有限公司以客户理财需求为基础，根据客户的风险偏好、财务状况、家庭结构等因素量身定制理财规划，帮助客户实现稳定、安全的财富增值。</p>
+				</div>
+				<div class="about_div_1">
+					<p class="idea_p_1">汇通集团下属相关子公司均已经国家相关工商部门核准成立，运营资金约五亿元，是一家集投资咨询、抵押担保、融资租赁、财富管理、风险管理为一体的综合性金融服务企业，通过匹配长期战略性、中期财务性、短期流动性三个阶段的投资，致力于为客户提供全面、稳健的资本市场解决方案。</p>
+					<p class="idea_p_1">汇通集团公司旗下有：深圳市汇通电子商务有限公司、深圳市佳科软件科技有限公司、深圳市汇丰通汽车贸易有限公司、深圳前海汇通金融服务有限公司东莞分公司、深圳前海汇通金融服务有限公司中山分公司、深圳前海汇通金融服务有限公司成都分公司。</p>
+					<p class="idea_p_1">其中，深圳市汇通电子商务有限公司为其中首家资金突破5个亿的国内专业从事互联网金融的服务机构。汇通集团公司至今已发展为省内最大的个人消费融资服务机构。
+					</p>
+				</div>
+				<div class="about_div_1">
+					<p class="idea_p_1">深圳市汇丰担保有限公司是在21世纪广东省内整体中小企业都急需资金发展整体经济环境下诞生的，注册资金为1000万，后增资到5000万，深圳市汇丰担保有限公司经营范围为：项目投资、投融资咨询等。深圳市汇丰担保有限公司目前已形成了以融资服务、投资为主导，涵盖风险投资、投融资咨询等领域的多种经营模式。</p>
+					<p>深圳市汇丰担保有限公司风控流程：</p>
+					<div align="center">
+						<img src="/images/about_1.jpg"/>
+					</div>
+				</div>
+			</div>
+		</div>
+	</ui:define>
+</ui:composition>
+</html>
+
+
+
+
+
+

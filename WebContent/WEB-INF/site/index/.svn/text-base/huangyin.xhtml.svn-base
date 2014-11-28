@@ -1,0 +1,32 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:tag="http://java.sun.com/jsf/composite/facetag">
+	
+	<ui:composition template="../tempalet/templaet_business.xhtml">
+		<ui:param name="menu_nav_key" value="index"/>
+		<ui:define name="page_title">汇通财富首页</ui:define>
+		<ui:define name="template_content">
+			<div class="con_div_1">
+			   <div class="contop">
+			     <h2 style="text-align:center;" >凡事预则立</h2><br/>
+			   </div>
+			   <p>几乎每个人都希望成功；但是只有其中极少一部分人仔细考虑过如何才能成功； 考虑过并为之做准备的人则少之更少；最终付诸行动获得成功的人已经屈指可数。</p>
+			   <p>如何才能成功呢？在《礼记•中庸》有句话：“凡事预则立， 不预则废。”意思是，做任何事情，如果事先准备充分就会成功， 否则就会失败。换成现在的话说就是：机遇是给有准备的人。</p>
+			   <p>有的人会说：这是老生常谈，两千多年前的“老话”不一定适应现在社会的情况了。 我认为这种看法不对。因为“老话”能够从两千多年前流传到现在，恰好说明“老话”的正确， 否则它早就消失在历史长河里了。</p>
+			   <p>汇通易贷经过三年时间的实践积累，可以说是博观约取、厚积薄发，已经为今后的发展打下了坚实的基础。这也预示着汇通易贷已经进入了高速发展甚至是跨越式发展的阶段。 当然今天汇通易贷取得的成绩是广大新老用户的支持和公司全体同仁共同努力的结果。</p>
+			   <p>当今互联网金融行业风云际会，汇通易贷正值腾飞九万里之时。此时，不仅需要招贤纳士吸引更专业的人才加入汇通，而且我们的员工也应该加快提升自己以担负更大职责、 应对更多挑战的步伐。汇通易贷一贯重视企业文化建设和员工成长的问题。因此， 公司一方面为员工的成长提供了足够的空间和便利，希望能够与汇通大家庭里的每个人都分享工作的乐趣与成果， 另一方面公司也希望员工们能够明确自己的职业规划、树立主动要求进步的态度、踏实地学习与积累，为自己职业生涯的成功做好准备。</p>
+			  <h3 style="text-align:right;margin-right:20px;">黄英 </h3>
+			</div>
+		</ui:define>
+	</ui:composition>
+</html>
+
+
+
+
+
+

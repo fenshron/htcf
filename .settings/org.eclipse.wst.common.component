@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="htcf">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <dependent-module archiveName="servlet-api.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/servlet-api.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="xstream-1.3.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/xstream-1.3.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-struts-3.2.0.RC2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/spring-struts-3.2.0.RC2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="aspectjrt.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/aspectjrt.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-tx-3.2.0.RC2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/spring-tx-3.2.0.RC2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-security-cas-3.1.3.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/spring-security-cas-3.1.3.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="slf4j-log4j12-1.6.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/slf4j-log4j12-1.6.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="freemarker-2.3.9.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/freemarker-2.3.9.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-security-openid-3.1.3.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/spring-security-openid-3.1.3.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="hsqldb.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/hsqldb.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ezmorph-1.0.6.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/ezmorph-1.0.6.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-security-remoting-3.1.3.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/spring-security-remoting-3.1.3.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="hibernate-core-4.1.9.Final.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/hibernate-core-4.1.9.Final.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="easymock-2.5.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/easymock-2.5.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="aspectjtools.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/aspectjtools.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="json-lib-2.4-jdk15.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/json-lib-2.4-jdk15.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="itextpdf-5.3.4.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/itextpdf-5.3.4.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-codec-1.8.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/commons-codec-1.8.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="junit-4.8.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/junit-4.8.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-security-config-3.1.3-caff.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/spring-security-config-3.1.3-caff.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="poi-3.8-20120326.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/poi-3.8-20120326.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="itext-asian.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/itext-asian.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="cglib-nodep-2.2.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/cglib-nodep-2.2.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-aop-3.2.0.RC2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/spring-aop-3.2.0.RC2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="mysql-connector-java-5.1.10-bin.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/mysql-connector-java-5.1.10-bin.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="hibernate-c3p0-4.1.9.Final.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/hibernate-c3p0-4.1.9.Final.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-beans-3.2.0.RC2-caff.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/spring-beans-3.2.0.RC2-caff.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-aspects-3.2.0.RC2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/spring-aspects-3.2.0.RC2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="itext-xtra-5.3.4.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/itext-xtra-5.3.4.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-context-3.2.0.RC2-caff.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/spring-context-3.2.0.RC2-caff.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-webmvc-3.2.0.RC2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/spring-webmvc-3.2.0.RC2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-test-3.2.0.RC2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/spring-test-3.2.0.RC2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="GroboUtils-5-core.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/GroboUtils-5-core.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-logging-1.1.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/commons-logging-1.1.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="xmemcached-1.4.3.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/xmemcached-1.4.3.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="easymockclassextension-2.5.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/easymockclassextension-2.5.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="odmg-3.0.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/odmg-3.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-web-3.2.0.RC2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/spring-web-3.2.0.RC2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-security-taglibs-3.1.3.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/spring-security-taglibs-3.1.3.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-fileupload-1.2.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/commons-fileupload-1.2.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jboss-logging-3.1.0.GA.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/jboss-logging-3.1.0.GA.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-instrument-tomcat-3.2.0.RC2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/spring-instrument-tomcat-3.2.0.RC2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-digester-2.0.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/commons-digester-2.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="com.springsource.org.quartz-1.6.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/com.springsource.org.quartz-1.6.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="c3p0-0.9.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/c3p0-0.9.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="antlr-2.7.7.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/antlr-2.7.7.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-security-web-3.1.3-caff.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/spring-security-web-3.1.3-caff.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-core-3.2.0.RC2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/spring-core-3.2.0.RC2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jsoup-1.6.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/jsoup-1.6.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="el-api.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/el-api.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-security-aspects-3.1.3.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/spring-security-aspects-3.1.3.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jasper-el.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/jasper-el.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jasper.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/jasper.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="log4j-1.2.16.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/log4j-1.2.16.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javassist-3.17.1-GA.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/javassist-3.17.1-GA.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="dbunit-2.4.7.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/dbunit-2.4.7.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-dao-2.0-m4.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/spring-dao-2.0-m4.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="aspectjweaver.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/aspectjweaver.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="prettyfaces-jsf2-3.3.3-caff.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/prettyfaces-jsf2-3.3.3-caff.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-lang-2.3.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/commons-lang-2.3.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jsp-api.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/jsp-api.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jboss-transaction-api_1.1_spec-1.0.0.Final.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/jboss-transaction-api_1.1_spec-1.0.0.Final.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-oxm-3.2.0.RC2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/spring-oxm-3.2.0.RC2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-jdbc-3.2.0.RC2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/spring-jdbc-3.2.0.RC2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-expression-3.2.0.RC2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/spring-expression-3.2.0.RC2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="umpay_sign_V40.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/umpay_sign_V40.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-context-support-3.2.0.RC2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/spring-context-support-3.2.0.RC2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="objenesis-1.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/objenesis-1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jstl.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/jstl.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="itext-pdfa-5.3.4.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/itext-pdfa-5.3.4.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="slf4j-api-1.7.5.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/slf4j-api-1.7.5.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-instrument-3.2.0.RC2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/spring-instrument-3.2.0.RC2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="mail.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/mail.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jcaptcha-1.0-all.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/jcaptcha-1.0-all.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-io-1.4.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/commons-io-1.4.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-security-acl-3.1.3.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/spring-security-acl-3.1.3.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="groovy-1.8.6.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/groovy-1.8.6.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-collections-3.2.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/commons-collections-3.2.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="annotations-api.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/annotations-api.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-webmvc-portlet-3.2.0.RC2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/spring-webmvc-portlet-3.2.0.RC2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="hibernate-commons-annotations-4.0.1.Final.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/hibernate-commons-annotations-4.0.1.Final.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="tomcat-juli.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/tomcat-juli.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="dom4j-1.6.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/dom4j-1.6.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="hibernate-validator-5.0.0.Alpha2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/hibernate-validator-5.0.0.Alpha2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jia-custom-components.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/jia-custom-components.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-orm-3.2.0.RC2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/spring-orm-3.2.0.RC2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="hibernate-jpa-2.0-api-1.0.1.Final.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/hibernate-jpa-2.0-api-1.0.1.Final.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-jms-3.2.0.RC2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/spring-jms-3.2.0.RC2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.faces-2.1.17-caff.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/javax.faces-2.1.17-caff.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="aopalliance-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/aopalliance-1.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="standard.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/standard.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-security-core-3.1.3.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/spring-security-core-3.1.3.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-beanutils-1.8.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/commons-beanutils-1.8.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="emayclient.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/emayclient.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-security-ldap-3.1.3.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/spring-security-ldap-3.1.3.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-security-crypto-3.1.3.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/spring-security-crypto-3.1.3.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ant-contrib-1.0b3.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/ant-contrib-1.0b3.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="org.aspectj.matcher.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/org.aspectj.matcher.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jta-1.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/caff.lib/externallibs/jta-1.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="htcf"/>
+        <property name="java-output-path" value="/htcf/build/classes"/>
+    </wb-module>
+</project-modules>

@@ -1,0 +1,18 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:c="http://java.sun.com/jsp/jstl/core"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+  
+		<ui:composition template="templaet_top.xhtml">
+			<ui:define name="templaet_products">
+				<div class="products_wh" id="div_top_10" >
+					<div><img src="images/adv.jpg" style="width:100%;height: 85px;"/></div>
+					<div><img src="images/win.png" style="width:140;height: 130px;margin: -60px auto 0 auto;margin-left: 895px;"/></div>
+				</div>
+				<ui:insert name="template_content"></ui:insert>
+			</ui:define> 
+		</ui:composition>
+			
+</html>

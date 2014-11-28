@@ -1,0 +1,38 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:tag="http://java.sun.com/jsf/composite/facetag">
+	
+	<ui:composition template="../tempalet/templaet_business.xhtml">
+		<ui:param name="menu_nav_key" value="index"/>
+		<ui:define name="page_title">汇通财富首页</ui:define>
+		<ui:define name="template_content">
+			<div class="con_div_1">
+			   <div class="contop">
+			     <h2 style="text-align:center;" >风险控制</h2><br/>
+			   </div>
+			   
+			  
+			   <p>我2013年8月中旬进入汇通，在汇通经历了快1年的时间，在这段时间里我经历了汇通业务转型，业务量的迅猛增加，标的金融逐步增大，分公司的开业，风控流程的规范等汇通一系列的改变，但是汇通有一点始终不变，风控的严谨，风控人员的合规，因为我与汇通始终坚信：世情圆、规矩方，风险控制无遗策，铁面无私保平安！</p>
+			   <p>众所周知，在整个金融贷款体系里风险是来自三大要素：第一信用风险，第二市场风险，第三操作风险。</p>
+			   <p>信用风险：指借款人由于种种原因不能按时还款所造成的信用违约。</p>
+			   <p>市场风险：指由于市场变动造成的抵押物价值贬值，及银行政策变动导致借款人不能按时还款。</p>
+			   <p>操作风险：指由于公司人员操作不得当（调查、核实资料不仔细），不完善的内部管理程序和不规范的内部操作程序而形成的风险。</p>
+			   <p>这几方面我认为信用风险的是最常见的，也是给我们造成损失最大的，因此我们会针对每笔业务上严格筛选，资料核实清楚，手续齐全，确定无误的情况下才给予放款。</p>
+			   <p>其次是操作风险，我们的风控人员都是在同行业工作3年以上的， 风控经理要求是在同行业从业5年以上的，首先我们规避了业务不熟而造成的风险， 其次对于风控的人格品质我们都进行长期的道德培训及法律法规的宣导，在管理上我们都是各司其职， 部门之间相互监督，稽查部门不定期的检查，因此在操作风险上我们基本杜绝了人为错误造成的风险。</p>
+			   <p>最后是市场风险，我们的风控人员会不定期的做好市场调研， 针对各大银行及地产中介获取相关的房地产交易数据及银行政策文件， 从而大大减少了由于市场风险对我们造成的损失。</p>
+			   <p>采取各种措施和方法消灭或减少风险事件的发生是我们的一贯的宗旨，确保投资者的资金安全是我们的责任，我们汇通不管是以前还是将来我们将坚定不移的按照这个宗旨和责任走下去。</p>
+			  <h3 style="text-align:right;margin-right:20px;">彭聪 </h3>
+			</div>
+		</ui:define>
+	</ui:composition>
+</html>
+
+
+
+
+
+

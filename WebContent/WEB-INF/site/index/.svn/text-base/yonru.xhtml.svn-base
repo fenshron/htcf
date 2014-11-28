@@ -1,0 +1,30 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:tag="http://java.sun.com/jsf/composite/facetag">
+	
+	<ui:composition template="../tempalet/templaet_business.xhtml">
+		<ui:param name="menu_nav_key" value="index"/>
+		<ui:define name="page_title">汇通财富首页</ui:define>
+		<ui:define name="template_content">
+			<div class="con_div_1">
+			   <div class="contop">
+			     <h2 style="text-align:center;" >能力与信用</h2><br/>
+			   </div>
+			   <p>借款能否如期归还，取决于客户的还款能力与意愿, 有能力而无“意愿”或者有“意愿”而无能力的都不是有信用。 因此“信用”由三个层次构成，一是信用的道德意义；二是履约能力； 三是法律、法规对信用关系的约束程度。故评价一个人有无“信用”， 不单纯是用道德来判断。</p>
+			   <p>汇通在风控方向上一直关注以上三点：还款的意愿通常以客户个人征信、 过往从业经历、家庭结构进行分析，良好的还贷记录是较好的证明， 完整的家庭结构会对客户还款起到很好的促进作用。还款能力不仅仅是体现在现有资产上， 良好的教育背景，成熟的职业技能，也能为客户实现准时还款增加条件。 当然借款中更重要的是完善的协议条约，汇通所有的合同与协议都经过顾问律师严格审核。</p>
+			   <p>在整个借款过程中汇通一直坚持做好，贷前尽职调查，贷中严格审核，贷后监督预警的风险控制管理方式。</p>
+			   <h3 style="text-align:right;margin-right:20px;">王永锐 </h3>
+			</div>
+		</ui:define>
+	</ui:composition>
+</html>
+
+
+
+
+
+

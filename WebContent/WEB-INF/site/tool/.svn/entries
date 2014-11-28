@@ -1,0 +1,40 @@
+8
+
+dir
+2664
+svn://192.168.1.85/caffcoo/websites/htcf/WebContent/WEB-INF/site/tool
+svn://192.168.1.85
+
+
+
+2014-11-27T05:26:31.970439Z
+2664
+fengshirong
+
+
+svn:special svn:externals svn:needs-lock
+
+tool_lc.xhtml
+file
+
+
+
+
+2014-11-27T05:01:32.914058Z
+366b7cbbb65aca165814f4c13f8f1a75
+2014-11-27T05:26:31.970439Z
+2664
+fengshirong
+
+tool_dk.xhtml
+file
+
+
+
+
+2014-11-27T05:01:31.672987Z
+11951c2f00e7571c8cb4c3edfe2db4b1
+2014-11-27T05:26:31.970439Z
+2664
+fengshirong
+

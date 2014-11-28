@@ -1,0 +1,42 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:c="http://java.sun.com/jsp/jstl/core"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+    
+		<ui:composition template="templaet_bottom.xhtml">
+		
+			<ui:define name="root_body_top">
+			<div class="index_top_wh">
+				<div class="top_content" >
+					<div class="top_left">
+						<a href="/htcf/index.htm"><img src="images/ico/logo.jpg" alt="汇通财富Log" /></a>
+					</div>
+					<div class="top_right">
+							<ul style="margin-top: 10px;">
+							    <li class="sp"><span>|</span></li>
+								<li class="navite_li"><a class="index_#{menu_nav_key == 'index'}"  href="/index.htm">首   页</a></li>
+								<li class="sp"><span>|</span></li>
+								<li class="navite_li"><a class="index_#{menu_nav_key == 'products'}"  href="/products.htm">产品中心</a></li>
+								<li class="sp"><span>|</span></li>
+								<li class="navite_li"><a class="index_#{menu_nav_key == 'adviser'}"  href="/adviser.htm">理财顾问</a></li>
+								<li class="sp"><span>|</span></li>
+								<li class="navite_li"><a class="index_#{menu_nav_key == 'idea'}" href="/idea.htm">汇通理念</a></li>
+								<li class="sp"><span>|</span></li>
+								<li class="navite_li"><a class="index_#{menu_nav_key == 'about'}"  href="/about.htm">关于汇通</a></li>
+								<li class="sp"><span>|</span></li>
+								<li class="navite_li"><a class="index_#{menu_nav_key == 'contact'}"  href="/contact.htm">联系我们</a></li>
+								<li class="sp"><span>|</span></li>
+							</ul>
+					</div>
+					
+				</div>
+			</div>
+				<ui:insert name="index"></ui:insert>
+				<ui:insert name="templaet_products"></ui:insert>
+									
+			</ui:define>
+		</ui:composition>
+	
+</html>

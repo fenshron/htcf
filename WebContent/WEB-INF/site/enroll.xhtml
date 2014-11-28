@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:c="http://java.sun.com/jsp/jstl/core"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+    <ui:param name="update_time" value=""/>
+	<h:head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"  />
+		<title><ui:insert name="page_title"/></title>
+		<meta name="Keywords" content="" />
+		<meta name="Description" content="" />
+		<meta name="Author" content="" /> 
+		<meta name="Copyright" content="" />
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/layout.css" />
+		<link rel="stylesheet" type="text/css" href="css/other.css" />
+		<link rel="stylesheet" type="text/css" href="css/htcf.css" />
+
+		<script src="js/jquery.easing.1.3.js"/>
+		<script src="js/jquery-1.4.2.min.js"/>
+		<script src="js/solwup.js" />
+		<script src="js/index.js"/>
+		<script src="js/shantu.js"/>
+		<script src="js/shantux.js"/>
+		<ui:insert name="css"/>
+		<ui:insert name="js_in_head"></ui:insert> 
+		
+	</h:head>
+	<h:body class="siteBg" style="height: 719px; background-image: url(/images/ico/login_register_bg1.jpg);">
+	
+	   <div class="page_block">
+	   		<div class="page_block_content">
+				
+					<div class="d_w o_center t_c" style="margin-top:80px;">
+                           <img src="images/ico/LOGO.png" alt="汇通财富Log" />
+                    </div>
+                    
+                    <div class=" o_center t_c">
+					   <form method="post" action="UserRegister" onsubmit="return index.check_buy_onsubmit();">
+							<p class="index_p_1">
+							  <label class="index_label_1">姓名:  </label>
+							  <input id="_app_buy_name" type="text"  name="userName" onblur="index.check_buy_name();" />
+							  <span id="_app_buy_name_nav" style="width: 120px;float: right;margin-left: -290px;"></span>
+							 </p>
+							<p class="index_p_1">
+							  <label class="index_label_1">电话:  </label>
+							  <input id="_app_buy_telephone" type="text" name="userPhone" onblur="index.check_buy_phone();" />
+							   <span id="_app_buy_telephone_nav" style="width: 120px;float: right;margin-left: -290px;"></span>
+							 </p>
+							<p class="index_p_1">
+							  <label class="index_label_1">邮箱:  </label>
+							  <input id="_app_buy_email" type="text" name="userEmail" onblur="index.check_buy_email();" />
+							  <span id="_app_buy_email_nav" style="width: 120px;float: right;margin-left: -290px;"></span>
+							</p>
+							<div class="index_btn">
+								<input type="submit" value="提交"/>
+							</div>
+						</form>
+					</div>
+                    
+                    
+                    
+                   
+                    
+                    
+		</div>
+	 </div>
+	</h:body>
+</html>

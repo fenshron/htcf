@@ -1,0 +1,84 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:c="http://java.sun.com/jsp/jstl/core"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+    
+		<ui:composition template="templaet_bottom.xhtml">
+		
+			<ui:define name="root_body_top">
+			<script> 
+				$(document).ready(function(){
+					$("#menu .navite_li").hover(function(){
+						$(this).find(".navitem_div").show();
+					},function(){
+						$(this).find(".navitem_div").hide();
+					}); 
+				});
+			 </script>
+			<div class="index_top_wh">
+				<div class="top_content" >
+					<div class="top_left">
+						<a href="/index.htm"><img src="../images/ico/logo.jpg" alt="汇通财富Log" /></a>
+					</div>
+					<div class="top_right" id="menu">
+							<ul style="margin-top: 10px;">
+							    <li class="sp"><span>|</span></li>
+								<li class="navite_li"><a class="index_#{menu_nav_key == 'index'}  "  href="/index.htm">首   页</a></li>
+								<li class="sp"><span>|</span></li>
+								<li class="navite_li"><a class="index_#{menu_nav_key == 'products'}  "  href="/products/products.htm">产品中心</a></li>
+								<li class="sp"><span>|</span></li>
+								<li class="navite_li"><a class="index_#{menu_nav_key == 'calcultor'}  "  href="#">工具箱</a>
+								<div class="navitem_div">
+										<ul>
+											<li style="float: left;">
+												<a title="理财计算器" href="/tool/tool_lc.htm"  >理财计算器</a> | 
+												<a title="贷款计算器" href="/tool/tool_dk.htm" >贷款计算器</a> 
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="sp"><span>|</span></li>
+								<li class="navite_li"><a class="index_#{menu_nav_key == 'adviser'}  "  href="/adviser/adviser.htm">财富预约</a></li>
+								<li class="sp"><span>|</span></li>
+								<li class="navite_li"><a class="index_#{menu_nav_key == 'new'}  " href="/news/news.htm">资讯新闻</a>
+									<div class="navitem_div">
+										<ul>
+											<li style="float: left;">
+												<a title="财富咨讯" href="/news/consultation.htm"  >财富咨询</a> | 
+												<a title="财富新闻" href="/news/wealth.htm" >财富新闻</a> | 
+												<a title="财富学堂" href="/news/school.htm" >财富学堂</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="sp"><span>|</span></li>
+								<li class="navite_li"><a class="index_#{menu_nav_key == 'about'}  "  href="/about/about.htm">关于汇通</a>
+								<div class="navitem_div">
+										<ul>
+											<li style="float: left;">
+												<a title="企业简介" href="/about/intro.htm"  >企业简介</a>|
+												<a title="汇通理念" href="/about/idea.htm"  >汇通理念</a>|
+												<a title="财富优势" href="/about/advantage.htm"  >财富优势</a>|
+												<a title="集团结构" href="/about/structure.htm"  >集团结构</a>|
+												<a title="合作机构" href="/about/partner.htm"  >合作机构</a>|
+												<a title="企业视频" href="/about/video.htm"  >企业视频</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="sp"><span>|</span></li>
+								<li class="navite_li"><a class="index_#{menu_nav_key == 'contact'}  "  href="/contact/contact.htm">联系我们</a></li>
+								<li class="sp"><span>|</span></li>
+							</ul>
+					</div>
+					
+				</div>
+			</div>
+				<ui:insert name="index"></ui:insert>
+				<ui:insert name="templaet_products"></ui:insert>
+									
+			</ui:define>
+		</ui:composition>
+	
+</html>
